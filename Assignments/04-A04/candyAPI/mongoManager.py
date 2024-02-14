@@ -7,7 +7,7 @@ import re
 import sys
 from bson.objectid import ObjectId
 from bson.errors import InvalidId
-
+from pymongo.errors import ConnectionFailure
 
 def is_valid_object_id(id_str):
     try:
